@@ -1,0 +1,17 @@
+/* Example custom CSS */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Customizing the title */
+div.document > h1.title {
+    font-size: 2em;
+    color: #333; /* Dark gray */
+}
+
+/* Customizing the navigation links */
+a.reference.external {
+    color: #007bff; /* Blue */
+}
