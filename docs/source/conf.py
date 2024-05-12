@@ -45,7 +45,7 @@ html_theme_options = {
 # -- Customization
 
 # Custom logo
-html_logo = 'logo.jpg'
+html_logo = 'logo.png'
 
 # Favicon
 html_favicon = 'logo.png'
