@@ -24,3 +24,4 @@ Contents
     api
     systemd-boot
     dnf-optimization
+    additional-repositories
