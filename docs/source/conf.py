@@ -36,11 +36,12 @@ html_theme_options = {
     'display_version': False,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': True,
-    'style_nav_header_background': 'green',
+    'style_nav_header_background': 'green', 
     'collapse_navigation': False,
     'sticky_navigation': True,
     'navigation_depth': 3,
 }
+
 
 # -- Customization
 
@@ -59,13 +60,4 @@ html_theme_options = {
 
 # Code block styling
 html_codeblock_linenos_style = 'inline'
-
-# Custom navigation bar
-html_theme_options = {
-    'navigation_depth': 4,
-    'collapse_navigation': False,
-    'sticky_navigation': True,
-    'navigation_depth': 3,
-    'includehidden': True,
-}
 
