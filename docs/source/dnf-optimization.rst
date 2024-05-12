@@ -17,7 +17,7 @@ To edit it, you can use any text editor with administrator privileges:
     sudo nano /etc/dnf/dnf.conf
 
 Default Selection "T" - Confirm Installation by Pressing Enter
-----------------------------------------------------------------
+--------------------------------------------------------------
 
 .. code-block:: plaintext
 
