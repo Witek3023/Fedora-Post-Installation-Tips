@@ -35,22 +35,12 @@ To ensure the complete FFMPEG is downloaded, execute the following command:
 
     sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 
-Then, you can choose one of the following methods to install multimedia codecs:
-
-Method 1.
+Then install multimedia codecs:
 
 .. code-block:: shell
 
     sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
     sudo dnf groupupdate sound-and-video
-
-Method 2. in case of any issues with playing videos or sounds:
-
-.. code-block:: shell
-
-    sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
-    sudo dnf install lame\* --exclude=lame-devel
-    sudo dnf group upgrade --with-optional Multimedia
 
 Hardware Accelerated Codec Installation
 ----------------------------------------
@@ -114,24 +104,10 @@ Upgrade Multimedia group:
 
     sudo dnf group upgrade --with-optional Multimedia
 
-About Flatpak
--------------
-
-Apart from DNF, there's another future-oriented alternative for traditional package managers.
-
-Flatpak, developed as part of the freedesktop.org project, is a tool for deploying software and managing packages in Linux systems. Flatpak packages are "universal" as their delivery and update process don't require creating and testing packages for each distribution separately. Flatpak applications require granted permissions to, for example, use Bluetooth devices, sound, network, etc. Users have full control over installed packages and can add or restrict permissions at any time. The sandbox environment allows running them independently of the rest of the system.
-
-Flatpak in Fedora
------------------
-
-Flatpak is installed in the Fedora distribution by default. By default, applications are delivered from the "Fedora Flatpaks" repository.
-
 Flathub - the Largest Flatpak Software Repository
 --------------------------------------------------
-
-Despite the great idea of delivering software in a non-invasive way, the "Fedora Flatpaks" repository doesn't offer a vast selection of available applications. Adding the Flathub repository is a good idea.
-
-There are two branches of the Flathub repository - stable and beta. Both repositories complement each other, so if you want to have software from the beta branch, it's also worth adding the stable branch.
+Apart from DNF, there's another future-oriented alternative for traditional package managers.
+There are two branches of the Flathub repository - stable and beta. Both repositories complement each other,
 
 To add Flathub Stable, execute the following command:
 
