@@ -37,14 +37,14 @@ To ensure the complete FFMPEG is downloaded, execute the following command:
 
 Then, you can choose one of the following methods to install multimedia codecs:
 
-Method 1. (from https://rpmfusion.org/Howto/Multimedia):
+Method 1.
 
 .. code-block:: shell
 
     sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
     sudo dnf groupupdate sound-and-video
 
-Method 2. in case of any issues with playing videos or sounds (from https://docs.fedoraproject.org/en-US/quick-docs/installing-plugins-for-playing-movies-and-music/):
+Method 2. in case of any issues with playing videos or sounds:
 
 .. code-block:: shell
 
