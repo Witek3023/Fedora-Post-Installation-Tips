@@ -35,8 +35,7 @@ html_theme = "sphinx_rtd_theme"
 epub_show_urls = 'footnote'
 
 html_theme_options = {
-    'analytics_id': 'YOUR_GOOGLE_ANALYTICS_ID',
-    'logo_only': True,
+    'logo_only': False,  
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': True,
@@ -45,4 +44,8 @@ html_theme_options = {
     'sticky_navigation': True,
     'navigation_depth': 3
 }
+
+def setup(app):
+    app.add_css_file('custom.css')
+
 
