@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Fedora-Post-Installation-Tips '
+project = 'Fedora-Post-Installation-Tips'
 copyright = '2024, Witek3023'
 author = 'Witek3023'
 
@@ -17,7 +17,6 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'sphinx_rtd_dark_mode',
 ]
 
 intersphinx_mapping = {
@@ -31,7 +30,10 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
-default_dark_mode = True
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# -- Custom CSS
+def setup(app):
+    app.add_css_file('static/custom.css')
