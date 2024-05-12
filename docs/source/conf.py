@@ -31,18 +31,6 @@ html_theme = "sphinx_rtd_theme"
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
-html_theme_options = {
-    'logo_only': False,  
-    'display_version': False,
-    'prev_next_buttons_location': 'bottom',
-    'style_external_links': True,
-    'style_nav_header_background': #00FF00, 
-    'collapse_navigation': False,
-    'sticky_navigation': True,
-    'navigation_depth': 3,
-}
-
-
 # -- Customization
 
 # Custom logo
@@ -56,6 +44,14 @@ html_theme_options = {
     'meta': {
         'viewport': 'width=device-width, initial-scale=1.0',
     },
+    'logo_only': False,  
+    'display_version': False,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': True,
+    'style_nav_header_background': #00FF00, 
+    'collapse_navigation': False,
+    'sticky_navigation': True,
+    'navigation_depth': 3,
 }
 
 # Code block styling
