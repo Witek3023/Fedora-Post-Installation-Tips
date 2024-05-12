@@ -24,8 +24,6 @@ intersphinx_mapping = {
 }
 intersphinx_disabled_domains = ['std']
 
-
-
 # -- Options for HTML output
 
 html_theme = "sphinx_rtd_theme"
@@ -41,5 +39,34 @@ html_theme_options = {
     'style_nav_header_background': '#333',
     'collapse_navigation': False,
     'sticky_navigation': True,
-    'navigation_depth': 3
+    'navigation_depth': 3,
 }
+
+# -- Customization
+
+# Custom logo
+html_logo = 'logo.jpg'
+
+# Favicon
+html_favicon = 'logo.png'
+
+# Responsive design meta tag
+html_theme_options = {
+    'meta': {
+        'viewport': 'width=device-width, initial-scale=1.0',
+    },
+}
+
+# Code block styling
+html_codeblock_linenos_style = 'inline'
+html_css_files = ['custom.css']
+
+# Custom navigation bar
+html_theme_options = {
+    'navigation_depth': 4,
+    'collapse_navigation': False,
+    'sticky_navigation': True,
+    'navigation_depth': 3,
+    'includehidden': True,
+}
+
