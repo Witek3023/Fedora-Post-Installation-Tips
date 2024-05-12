@@ -23,3 +23,4 @@ Contents
     systemd-boot
     dnf-optimization
     additional-repositories
+    personal
