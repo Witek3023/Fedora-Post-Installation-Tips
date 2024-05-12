@@ -10,8 +10,6 @@ release = '0.1'
 version = '0.1.0'
 
 # -- General configuration
-html_static_path = ['_static']
-templates_path = ['_templates']
 
 extensions = [
     'sphinx.ext.duration',
@@ -36,3 +34,5 @@ html_theme = "sphinx_rtd_theme"
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
+def setup(app):
+    app.add_css_file('custom.css')
