@@ -1,0 +1,11 @@
+/* custom.css */
+
+/* Change background color */
+div.body {
+    background-color: #f0f0f0; /* Light Gray */
+}
+
+/* Change text color */
+div.body, div.body p, div.body li, div.body h1, div.body h2, div.body h3, div.body h4, div.body h5, div.body h6 {
+    color: #000080; /* Dark Blue */
+}
