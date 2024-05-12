@@ -10,10 +10,6 @@ release = '0.1'
 version = '0.1.0'
 
 # -- General configuration
-html_static_path = ['_static']
-html_css_files = [
-    'custom.css',
-]
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
@@ -42,7 +38,7 @@ html_theme_options = {
     'display_version': False,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': True,
-    'style_nav_header_background': '#00ff00',
+    'style_nav_header_background': '#333',
     'collapse_navigation': False,
     'sticky_navigation': True,
     'navigation_depth': 3
