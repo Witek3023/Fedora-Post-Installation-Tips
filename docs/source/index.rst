@@ -20,8 +20,6 @@ Contents
 
 .. toctree::
 
-    usage
-    api
     systemd-boot
     dnf-optimization
     additional-repositories
