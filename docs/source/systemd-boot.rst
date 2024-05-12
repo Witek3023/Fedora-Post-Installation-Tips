@@ -54,6 +54,7 @@ Showing Windows entry from another drive while dual-booting
 
     - Run `sudo fdisk -l` to list partitions.
     - Look for a partition on drive where windows is installed with a size of 100M and type "EFI System".
+    
     - Create a directory and mount the Windows EFI partition that was identified earlier into it:
 
     .. code-block:: shell
@@ -73,11 +74,3 @@ Showing Windows entry from another drive while dual-booting
    
         sudo umount /mnt/winefi
         sudo rm -rf /mnt/winefi
-
-The process described in the question of manually adding a `windows.conf` to the loader-entries was not necessary for me.
-
-
-.. autosummary::
-   :toctree: generated
-
-   lumache
