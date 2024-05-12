@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Fedora-Post-Installation-Tips '
+copyright = '2024, Witek3023'
+author = 'Witek3023'
 
 release = '0.1'
 version = '0.1.0'
@@ -29,7 +29,7 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'nature'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
