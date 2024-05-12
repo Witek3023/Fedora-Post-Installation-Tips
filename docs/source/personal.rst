@@ -62,7 +62,6 @@ You can find the custom kernel in the Bieszczaders Kernel-CachyOS repository:
 - `Bieszczaders Kernel-CachyOS <https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/>`_
 
 Features
---------
 
 The custom kernel offers the following features:
 
