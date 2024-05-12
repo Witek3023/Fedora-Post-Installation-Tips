@@ -23,4 +23,4 @@ Contents
     usage
     api
     systemd-boot
-    dnf-optimalization.
+    dnf-optimalization
