@@ -134,3 +134,4 @@ sudo fwupdmgr update
 tlp
 
 sudo timedatectl set-local-rtc '0'
+sudo dnf install plasma-workspace-x11
