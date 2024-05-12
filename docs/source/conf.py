@@ -31,5 +31,26 @@ templates_path = ['_templates']
 
 html_theme = 'sphinx_rtd_theme'
 
+html_theme_options = {
+    'style_nav_header_background': '#343131',
+    'logo_only': True,
+    'style_external_links': True,
+    'collapse_navigation': False,
+    'sticky_navigation': True,
+    'includehidden': True,
+    'titles_only': False,
+    'prev_next_buttons_location': 'bottom',
+    'style_nav_header_background': '#343131',
+    'display_version': True,
+    'navigation_depth': 3,
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'style_nav_header_background': '#343131',
+    'logo_only': False,
+    'titles_only': False,
+    'display_version': True,
+    'prev_next_buttons_location': 'both',
+}
+
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
