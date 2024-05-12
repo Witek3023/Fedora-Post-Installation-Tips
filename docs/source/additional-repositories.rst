@@ -2,7 +2,7 @@ Additional Repositories + Codecs
 ================================
 
 RPM Fusion Repository Installation Guide
-------------
+----------------------------------------
 
 By default, Fedora, following its operating system policy, utilizes open-source software. To install closed-source software/drivers, you need to add the RPM Fusion repository.
 
