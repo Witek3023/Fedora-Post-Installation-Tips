@@ -34,6 +34,7 @@ To ensure the complete FFMPEG is downloaded, execute the following command:
 .. code-block:: shell
 
     sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+    sudo dnf install ffmpeg ffmpeg-libs libva libva-utils
 
 Then install multimedia codecs:
 
