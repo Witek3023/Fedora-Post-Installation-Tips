@@ -59,7 +59,6 @@ html_theme_options = {
 
 # Code block styling
 html_codeblock_linenos_style = 'inline'
-html_css_files = ['custom.css']
 
 # Custom navigation bar
 html_theme_options = {
