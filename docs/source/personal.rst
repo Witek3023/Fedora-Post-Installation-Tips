@@ -124,3 +124,5 @@ These features aim to enhance performance, compatibility, and functionality of t
 .. code-block:: shell
 
     uksmdstats
+
+sudo dnf install net-tools pip htop neofetch kitty
