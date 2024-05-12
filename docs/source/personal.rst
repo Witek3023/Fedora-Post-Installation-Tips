@@ -125,3 +125,10 @@ These features aim to enhance performance, compatibility, and functionality of t
     uksmdstats
 
 sudo dnf install net-tools pip htop neofetch kitty
+
+sudo fwupdmgr get-devices 
+sudo fwupdmgr refresh --force 
+sudo fwupdmgr get-updates 
+sudo fwupdmgr update
+
+tlp
