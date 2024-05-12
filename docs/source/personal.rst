@@ -132,3 +132,5 @@ sudo fwupdmgr get-updates
 sudo fwupdmgr update
 
 tlp
+
+sudo timedatectl set-local-rtc '0'
