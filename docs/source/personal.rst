@@ -124,14 +124,82 @@ These features aim to enhance performance, compatibility, and functionality of t
 
     uksmdstats
 
-sudo dnf install net-tools pip htop neofetch kitty
+Additional Software Installation and Configuration
+---------------------------------------------------
 
-sudo fwupdmgr get-devices 
-sudo fwupdmgr refresh --force 
-sudo fwupdmgr get-updates 
-sudo fwupdmgr update
+1. **Install essential(fully personal) tools:**
 
-tlp
+   .. code-block:: shell
 
-sudo timedatectl set-local-rtc '0'
-sudo dnf install plasma-workspace-x11
+      sudo dnf install net-tools pip htop neofetch kitty plasma-workspace-x11
+
+2. **Set hardware clock to local time:**
+
+   .. code-block:: shell
+
+      sudo timedatectl set-local-rtc '0'
+
+   Ensures the hardware clock is set to UTC for better time synchronization.
+
+3. **Firmware updates:**
+
+   .. code-block:: shell
+
+      sudo fwupdmgr get-devices 
+      sudo fwupdmgr refresh --force 
+      sudo fwupdmgr get-updates 
+      sudo fwupdmgr update
+
+   These commands check for and apply any available firmware updates to ensure your hardware is running the latest firmware.
+
+Power Management Configuration
+------------------------------
+
+1. **Install and configure TLP for advanced power management:**
+
+   .. code-block:: shell
+
+      sudo dnf install tlp tlp-rdw
+
+   TLP provides advanced power management features for your Fedora system.
+
+2. **Remove Power Profiles Daemon:**
+
+   .. code-block:: shell
+
+      sudo dnf remove power-profiles-daemon
+
+   TLP and Power Profiles Daemon can conflict, so it's recommended to remove the latter.
+
+3. **Enable TLP service:**
+
+   .. code-block:: shell
+
+      sudo systemctl enable tlp.service
+
+   Ensures TLP starts automatically on boot.
+
+4. **Mask systemd rfkill services:**
+
+   .. code-block:: shell
+
+      sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket
+
+   Prevents conflicts with TLP's radio management.
+
+5. **Add ThinkPad Extras repositories:**
+
+   .. code-block:: shell
+
+      sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm
+
+   These repositories provide additional software packages and updates for TLP.
+
+6. **Install kernel development packages and tp_smapi:**
+
+   .. code-block:: shell
+
+      sudo dnf install kernel-devel akmod-tp_smapi
+      sudo dnf --enablerepo=tlp-updates-testing install kernel-devel akmod-tp_smapi
+
+   These packages are required for advanced power management features provided by TLP on ThinkPad laptops.
