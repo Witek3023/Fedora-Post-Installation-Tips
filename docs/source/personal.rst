@@ -220,7 +220,8 @@ Baloo is KDE's file indexing and search service. Disabling or optimizing it can 
 
    .. code-block:: bash
 
-      balooctl disable
+      balooctl16 disable
+      balooctl16 purge
 
 Desktop Effects
 -----------------
