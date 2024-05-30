@@ -1,19 +1,17 @@
-Welcome to Lumache's documentation!
-===================================
+=======
+Fedora Post-Installation Tips
+=======
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+Introduction
+------------
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+After installing Fedora, there are several steps you can take to further enhance the functionality, performance, and usability of your system. This guide provides comprehensive instructions on various post-installation tasks. By following these steps, you can tailor your Fedora system to better suit your specific requirements and preferences, ensuring a smoother and more efficient computing experience.
 
-.. note::
+Before proceeding with the customization steps, it's important to update your system to ensure all packages are up-to-date. Run the following commands:
 
-   This project is under active development.
-
-sudo dnf upgrade -y
+.. code-block:: shell
+   
+sudo dnf upgrade
 
 Contents
 --------
