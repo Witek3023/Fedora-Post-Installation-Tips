@@ -204,9 +204,9 @@ Power Management Configuration
 
    These packages are required for advanced power management features provided by TLP on ThinkPad laptops.
 
-=======================================
+
 How to Make KDE Faster
-=======================================
+======================
 
 This document provides steps to optimize KDE's performance by configuring Baloo, desktop effects, background services, Plasma search, general behavior animation speed, and user feedback settings.
 
