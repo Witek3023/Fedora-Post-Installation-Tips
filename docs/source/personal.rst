@@ -130,7 +130,7 @@ Additional Software Installation and Configuration
 
    .. code-block:: shell
 
-      sudo dnf install net-tools pip htop neofetch kitty plasma-workspace-x11
+      sudo dnf install net-tools pip htop neofetch kitty plasma-workspace-x11 gettext
 
 2. **Set hardware clock to local time:**
 
