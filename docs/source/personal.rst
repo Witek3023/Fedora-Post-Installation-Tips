@@ -1,6 +1,5 @@
-=======
 Custom Fedora Setup Guide
-=======
+=========================
 
 Introduction
 ------------
