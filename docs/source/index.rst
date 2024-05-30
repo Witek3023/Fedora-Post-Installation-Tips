@@ -10,8 +10,7 @@ After installing Fedora, there are several steps you can take to further enhance
 Before proceeding with the customization steps, it's important to update your system to ensure all packages are up-to-date. Run the following commands:
 
 .. code-block:: shell
-   
-sudo dnf upgrade
+   sudo dnf upgrade
 
 Contents
 --------
