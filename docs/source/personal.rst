@@ -203,6 +203,63 @@ Power Management Configuration
 
    These packages are required for advanced power management features provided by TLP on ThinkPad laptops.
 
+Building and Executing Thermald on Fedora
+-----------------------------------------
+
+1. Install Dependencies
+------------------------
+
+To install the necessary dependencies, run the following commands:
+
+.. code-block:: bash
+
+    dnf install automake
+    dnf install autoconf-archive
+    dnf install gcc
+    dnf install gcc-c++
+    dnf install glib-devel
+    dnf install dbus-glib-devel
+    dnf install libxml2-devel
+    dnf install gtk-doc
+    dnf install upower-devel
+    dnf install libevdev-devel
+
+2. Build Thermald
+-----------------
+
+Clone the repository and build the project:
+
+.. code-block:: bash
+
+    git clone https://github.com/intel/thermal_daemon
+    cd thermal_daemon
+    ./autogen.sh prefix=/
+    make
+    sudo make install
+
+The `prefix` value depends on the distribution version. It can be "/" or "/usr". 
+Check the existing path of the thermald install, if present, to update and add the appropriate prefix.
+
+3. Manage Thermald Service
+--------------------------
+
+To start the thermald service:
+
+.. code-block:: bash
+
+    sudo systemctl start thermald.service
+
+To get the status of the thermald service:
+
+.. code-block:: bash
+
+    sudo systemctl status thermald.service
+
+To stop the thermald service:
+
+.. code-block:: bash
+
+    sudo systemctl stop thermald.service
 
 How to Make KDE Faster
 ----------------------
