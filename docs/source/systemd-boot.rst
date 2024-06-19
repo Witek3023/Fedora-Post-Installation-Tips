@@ -26,7 +26,7 @@ Showing Windows entry from another drive while dual-booting
 
     .. code-block:: shell
    
-        sudo cp -R /mnt/winefi/EFI/Microsoft/ /boot/efi/Microsoft
+        sudo cp -R /mnt/winefi/EFI/Microsoft/ /boot/efi/EFI/Microsoft
 
 4. **Unmount the Windows partition and clean up:**
 
