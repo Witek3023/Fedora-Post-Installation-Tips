@@ -158,6 +158,36 @@ Additional Software Installation and Configuration
         # optional for zsh completion
         sudo cp completions/_colorscript /usr/share/zsh/site-functions
 
+5. **Installing Visual Studio Code on Fedora**
+
+To install Visual Studio Code on RHEL, Fedora, or CentOS, follow these steps:
+
+1. **Import the Microsoft GPG Key**
+
+   Import the Microsoft GPG key by running the following command:
+
+   .. code-block:: bash
+
+      sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+
+2. **Add the VS Code Repository**
+
+   Create a repository file for VS Code with the following command:
+
+   .. code-block:: bash
+
+      echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+
+3. **Update the Package Cache and Install**
+
+   Update the package cache and install Visual Studio Code:
+
+   .. code-block:: bash
+
+      dnf check-update
+      sudo dnf install code  # or code-insiders
+
+
 Firmware Updates
 ----------------
    .. code-block:: shell
