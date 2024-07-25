@@ -224,8 +224,8 @@ Power Management Configuration
 Building and Executing Thermald on Fedora
 -----------------------------------------
 
-1. Install Dependencies
-------------------------
+1. **Install Dependencies**
+
 
 To install the necessary dependencies, run the following commands:
 
@@ -242,8 +242,7 @@ To install the necessary dependencies, run the following commands:
     dnf install upower-devel
     dnf install libevdev-devel
 
-2. Build Thermald
------------------
+2. **Build Thermald**
 
 Clone the repository and build the project:
 
@@ -258,8 +257,8 @@ Clone the repository and build the project:
 The `prefix` value depends on the distribution version. It can be "/" or "/usr". 
 Check the existing path of the thermald install, if present, to update and add the appropriate prefix.
 
-3. Manage Thermald Service
---------------------------
+3. **Manage Thermald Service**
+
 
 To start the thermald service:
 
