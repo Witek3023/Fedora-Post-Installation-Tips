@@ -147,6 +147,7 @@ Additional Software Installation and Configuration
 
 4. **Install Colorscripts**
     .. code-block:: shell
+
         git clone https://gitlab.com/dwt1/shell-color-scripts.git
         cd shell-color-scripts
         sudo make install
