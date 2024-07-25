@@ -130,18 +130,35 @@ Additional Software Installation and Configuration
 
    .. code-block:: shell
 
-      sudo dnf install net-tools pip htop neofetch kitty plasma-workspace-x11 gettext
+      sudo dnf install net-tools pip htop neofetch kitty nemo nemo-fileroller nemo-compare nemo-audio-tab nemo-image-converter nemo-pastebin nemo-python nemo-search-helpers git unzip pfetch btop zathura feh pavucontrol ranger vim neovim emacs figlet lolcat perl-Archive-Extract-lzma-IO-Uncompress-UnLzma tar xz p7zip zip gzip cpio unace network-manager-applet blueman libnotify bluez stow sl
 
 2. **Set hardware clock to local time:**
 
    .. code-block:: shell
 
-      sudo timedatectl set-local-rtc '0'
+        sudo timedatectl set-local-rtc '0'
 
    Ensures the hardware clock is set to UTC for better time synchronization.
 
-3. **Firmware updates:**
+3. **Disable terminal bell**
+    .. code-block:: shell
 
+        echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/blacklist-pcspkr.conf > /dev/null
+
+4. **Install Colorscripts**
+    .. code-block:: shell
+        git clone https://gitlab.com/dwt1/shell-color-scripts.git
+        cd shell-color-scripts
+        sudo make install
+
+        # Removal
+        sudo make uninstall
+
+        # optional for zsh completion
+        sudo cp completions/_colorscript /usr/share/zsh/site-functions
+
+Firmware Updates
+----------------
    .. code-block:: shell
 
       sudo fwupdmgr get-devices 
