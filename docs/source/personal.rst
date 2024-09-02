@@ -33,7 +33,7 @@ Zsh Installation and Configuration
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-5. Configure Zsh by replacing the `.zshrc` file with your custom configuration. You can provide the URL to your `.zshrc` file here.
+5. Configure Zsh by replacing the `.zshrc` file with your custom configuration.
 
 SELinux Configuration
 ---------------------
