@@ -130,7 +130,7 @@ Additional Software Installation and Configuration
 
    .. code-block:: shell
 
-      sudo dnf install net-tools pip htop neofetch kitty git unzip btop zathura feh ranger vim neovim emacs figlet lolcat perl-Archive-Extract-lzma-IO-Uncompress-UnLzma tar xz p7zip zip gzip cpio unace network-manager-applet bluez stow sl
+      sudo dnf install net-tools pip htop neofetch kitty git unzip btop zathura feh ranger vim neovim emacs figlet lolcat perl-Archive-Extract-lzma-IO-Uncompress-UnLzma tar xz p7zip zip gzip cpio unace network-manager-applet bluez stow sl cmus
 
 2. **Set hardware clock to local time:**
 
@@ -144,19 +144,6 @@ Additional Software Installation and Configuration
     .. code-block:: shell
 
         echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/blacklist-pcspkr.conf > /dev/null
-
-4. **Install Colorscripts**
-    .. code-block:: shell
-
-        git clone https://gitlab.com/dwt1/shell-color-scripts.git
-        cd shell-color-scripts
-        sudo make install
-
-        # Removal
-        sudo make uninstall
-
-        # optional for zsh completion
-        sudo cp completions/_colorscript /usr/share/zsh/site-functions
 
 5. **Installing Visual Studio Code on Fedora**
 
