@@ -335,7 +335,7 @@ Disabling or reducing desktop effects can significantly speed up KDE.
 
 1. **Access Desktop Effects:**
 
-   Open System Settings and navigate to ``Workspace`` > ``Desktop Behavior`` > ``Desktop Effects``.
+   Open System Settings and navigate to ``Apps % Windows`` > ``Window Manager`` > ``Desktop Effects``.
 
 2. **Disable Unnecessary Effects:**
 
@@ -348,11 +348,11 @@ Disabling unnecessary background services can free up system resources.
 
 1. **Access Background Services:**
 
-   Open System Settings and navigate to ``Startup and Shutdown`` > ``Background Services``.
+   Open System Settings and search for ``Background Services``.
 
 2. **Disable Unnecessary Services:**
 
-   Review the list of services and disable those that are not needed. For example, ``Hot New Stuff`` and ``Plasma Search`` services may be unnecessary for some users.
+   Review the list of services and disable those that are not needed. For example, ``Vaults``, ``Remote URL change notifier``, ``SMB Watcher`` and ``Write Daemon `` services may be unnecessary for some users.
 
 Plasma Search
 ---------------
@@ -374,7 +374,7 @@ Reducing or disabling animations can make the desktop feel more responsive.
 
 1. **Access General Behavior Settings:**
 
-   Open System Settings and navigate to ``Workspace`` > ``Desktop Behavior`` > ``General Behavior``.
+   Open System Settings and navigate to ``Workspace`` > ``General Behavior``.
 
 2. **Set Animation Speed:**
 
@@ -387,7 +387,7 @@ Disabling user feedback can reduce background processing.
 
 1. **Access User Feedback Settings:**
 
-   Open System Settings and navigate to ``Workspace`` > ``KDE`` > ``User Feedback``.
+   Open System Settings and navigate to ``Security & Privacy`` > ``User Feedback``.
 
 2. **Disable User Feedback:**
 
