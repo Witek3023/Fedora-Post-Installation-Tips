@@ -277,10 +277,11 @@ Check the existing path of the thermald install, if present, to update and add t
 3. **Manage Thermald Service**
 
 
-To start the thermald service:
+To enable the thermald service:
 
 .. code-block:: bash
 
+    sudo systemctl enable thermald.service
     sudo systemctl start thermald.service
 
 To get the status of the thermald service:
