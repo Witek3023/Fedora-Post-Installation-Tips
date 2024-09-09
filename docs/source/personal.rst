@@ -296,9 +296,9 @@ To stop the thermald service:
 
     sudo systemctl stop thermald.service
 
-=======================================
+-----------------------
 How to Make KDE Faster
-=======================================
+-----------------------
 
 This document provides steps to optimize KDE's performance by configuring Baloo, desktop effects, background services, Plasma search, general behavior animation speed, and user feedback settings.
 
@@ -322,6 +322,11 @@ Baloo is KDE's file indexing and search service. Disabling or optimizing it can 
    .. code-block:: bash
 
       kate ~/.config/baloofilerc
+
+disabling Akonadi
+-----------------
+    Run `akonadictl stop` to stop currently running server
+    Edit `/$HOME/.config/akonadi/akonadiserverrc` and change `true` to `false` in the line that has `StartServer=true`
 
 Desktop Effects
 -----------------
