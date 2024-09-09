@@ -313,7 +313,7 @@ Baloo is KDE's file indexing and search service. Disabling or optimizing it can 
 
    .. code-block:: bash
 
-      balooctl disable
+      balooctl6 disable
 
 2. **Optimize Baloo:**
 
@@ -322,16 +322,6 @@ Baloo is KDE's file indexing and search service. Disabling or optimizing it can 
    .. code-block:: bash
 
       kate ~/.config/baloofilerc
-
-   Add or edit the following lines:
-
-   .. code-block:: ini
-
-      [Basic Settings]
-      Indexing-Enabled=true
-      Indexing-Enabled=true
-      exclude filters=*.iso,*.mp3,*.mp4
-      exclude folders[$e]=$HOME/Downloads,$HOME/Videos
 
 Desktop Effects
 -----------------
