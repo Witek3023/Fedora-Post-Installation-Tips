@@ -322,7 +322,7 @@ Disabling unnecessary background services can free up system resources.
 
 2. **Disable Unnecessary Services:**
 
-   Review the list of services and disable those that are not needed. For example, ``Vaults``, ``Remote URL change notifier``, ``SMB Watcher`` and ``Write Daemon `` services may be unnecessary for some users.
+   Review the list of services and disable those that are not needed. For example, ``Vaults``, ``Remote URL change notifier``, ``SMB Watcher`` and ``Write Daemon`` services may be unnecessary for some users.
 
 Plasma Search
 ---------------
