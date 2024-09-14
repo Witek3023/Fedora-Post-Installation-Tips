@@ -93,36 +93,6 @@ These features aim to enhance performance, compatibility, and functionality of t
 
     sudo dnf install kernel-cachyos kernel-cachyos-devel-matched
 
-3. Enable the Bieszczaders Kernel-CachyOS Addons repository:
-
-.. code-block:: shell
-
-    sudo dnf copr enable bieszczaders/kernel-cachyos-addons
-
-4. Install required dependencies:
-
-.. code-block:: shell
-
-    sudo dnf install libcap-ng libcap-ng-devel procps-ng procps-ng-devel
-
-5. Install uksmd:
-
-.. code-block:: shell
-
-    sudo dnf install uksmd
-
-6. Enable and start the uksmd service:
-
-.. code-block:: shell
-
-    sudo systemctl enable --now uksmd.service
-
-7. Check uksmd statistics:
-
-.. code-block:: shell
-
-    uksmdstats
-
 Additional Software Installation and Configuration
 ---------------------------------------------------
 
