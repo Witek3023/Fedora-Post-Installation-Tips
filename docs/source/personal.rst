@@ -100,7 +100,7 @@ Additional Software Installation and Configuration
 
    .. code-block:: shell
 
-      sudo dnf install net-tools pip htop neofetch kitty git unzip btop zathura feh ranger vim neovim emacs figlet lolcat perl-Archive-Extract-lzma-IO-Uncompress-UnLzma tar xz p7zip zip gzip cpio unace network-manager-applet bluez stow sl cmus
+      sudo dnf install net-tools pip htop neofetch kitty git unzip btop zathura feh ranger vim emacs figlet lolcat perl-Archive-Extract-lzma-IO-Uncompress-UnLzma tar xz p7zip zip gzip cpio unace inxi stow sl cmus
 
 2. **Set hardware clock to local time:**
 
