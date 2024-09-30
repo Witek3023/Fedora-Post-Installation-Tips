@@ -158,12 +158,19 @@ Firmware Updates
 
 Power Management Configuration
 ------------------------------
+Install tuned-ppd or TLP
+**For tuned-ppd**
+Replace power-profiles-daemon with tuned-ppd:
 
+.. code-block:: shell
+    sudo dnf swap power-profiles-daemon tuned-ppd
+
+**For TLP**
 1. **Install and configure TLP for advanced power management:**
 
-   .. code-block:: shell
+    .. code-block:: shell
 
-      sudo dnf install tlp tlp-rdw
+        sudo dnf install tlp tlp-rdw
 
    TLP provides advanced power management features for your Fedora system.
 
