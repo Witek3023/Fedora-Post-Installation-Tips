@@ -218,16 +218,7 @@ To install the necessary dependencies, run the following commands:
 
 .. code-block:: bash
 
-    dnf install automake
-    dnf install autoconf-archive
-    dnf install gcc
-    dnf install gcc-c++
-    dnf install glib-devel
-    dnf install dbus-glib-devel
-    dnf install libxml2-devel
-    dnf install gtk-doc
-    dnf install upower-devel
-    dnf install libevdev-devel
+    dnf install automake libevdev-devel upower-devel gtk-doc libxml2-devel dbus-glib-devel glib-devel gcc-c++ gcc autoconf-archive
 
 2. **Build Thermald**
 
@@ -295,7 +286,11 @@ Baloo is KDE's file indexing and search service. Disabling or optimizing it can 
 
 disabling Akonadi
 -----------------
-    Run `akonadictl stop` to stop currently running server
+    Run to stop currently running server
+
+    .. code-block:: bash
+        akonadictl stop
+    
     Edit `/$HOME/.config/akonadi/akonadiserverrc` and change `true` to `false` in the line that has `StartServer=true`
 
 Desktop Effects
