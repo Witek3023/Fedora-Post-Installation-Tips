@@ -93,6 +93,56 @@ These features aim to enhance performance, compatibility, and functionality of t
 
     sudo dnf install kernel-cachyos kernel-cachyos-devel-matched
 
+Kernel addons
+-------------
+
+Enable COPR Repository
+-----------------------
+To enable the `bieszczaders/kernel-cachyos-addons` COPR repository, run:
+
+.. code-block:: shell
+    sudo dnf copr enable bieszczaders/kernel-cachyos-addons
+
+Install Required Packages
+--------------------------
+To install the necessary packages, execute:
+
+.. code-block:: shell
+    sudo dnf install libcap-ng libcap-ng-devel procps-ng procps-ng-devel
+
+Install UKSMD
+--------------
+To install the UKSMD package, run:
+
+.. code-block:: shell
+    sudo dnf install uksmd
+
+Enable UKSMD Service
+---------------------
+To enable and start the UKSMD service, use:
+
+.. code-block:: shell
+    sudo systemctl enable --now uksmd.service
+
+Check Correct Operation of UKSMD
+---------------------------------
+To verify that UKSMD is functioning correctly, run:
+
+.. code-block:: shell
+    uksmdstats
+
+Sched-ext Schedulers
+=====================
+The stable branch kernels support sched-ext schedulers. To install the package containing these schedulers, execute:
+
+.. code-block:: shell
+    sudo dnf install scx-scheds
+
+If you want to use the systemd service for sched-ext, enable and start it so it will run at system boot:
+
+.. code-block:: shell
+    sudo systemctl enable --now scx.service
+
 Additional Software Installation and Configuration
 ---------------------------------------------------
 
