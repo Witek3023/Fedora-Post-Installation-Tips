@@ -156,14 +156,14 @@ Firmware Updates
 
    These commands check for and apply any available firmware updates to ensure your hardware is running the latest firmware.
 
-Power Management Configuration
-------------------------------
-Install tuned-ppd or TLP
-**For tuned-ppd**
-Replace power-profiles-daemon with tuned-ppd:
+Power Management Configuration Install tuned-ppd or TLP
+-------------------------------------------------------
 
-.. code-block:: shell
-    sudo dnf swap power-profiles-daemon tuned-ppd
+**For tuned-ppd** replace power-profiles-daemon with tuned-ppd:
+
+    .. code-block:: shell
+
+        sudo dnf swap power-profiles-daemon tuned-ppd
 
 **For TLP**
 1. **Install and configure TLP for advanced power management:**
@@ -172,7 +172,7 @@ Replace power-profiles-daemon with tuned-ppd:
 
         sudo dnf install tlp tlp-rdw
 
-   TLP provides advanced power management features for your Fedora system.
+TLP provides advanced power management features for your Fedora system.
 
 2. **Remove Power Profiles Daemon:**
 
