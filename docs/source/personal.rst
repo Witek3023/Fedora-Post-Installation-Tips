@@ -137,7 +137,7 @@ To verify that UKSMD is functioning correctly, run:
     uksmdstats
 
 Sched-ext Schedulers
-=====================
+--------------------
 The stable branch kernels support sched-ext schedulers. To install the package containing these schedulers, execute:
 
 .. code-block:: shell
@@ -214,7 +214,7 @@ Firmware Updates
    These commands check for and apply any available firmware updates to ensure your hardware is running the latest firmware.
 
 Power Management Configuration Install tuned-ppd or TLP
--------------------------------------------------------
+==========================================================
 
 **For tuned-ppd** replace power-profiles-daemon with tuned-ppd:
 
@@ -321,9 +321,9 @@ To stop the thermald service:
 
     sudo systemctl stop thermald.service
 
------------------------
+
 How to Make KDE Faster
------------------------
+======================
 
 This document provides steps to optimize KDE's performance by configuring Baloo, desktop effects, background services, Plasma search, general behavior animation speed, and user feedback settings.
 
