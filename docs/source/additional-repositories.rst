@@ -79,7 +79,6 @@ To enable OpenH264, execute the following commands:
 
 .. code-block:: shell
 
-    sudo dnf config-manager --enable fedora-cisco-openh264
     sudo dnf install gstreamer1-plugin-openh264 mozilla-openh264
 
 Troubleshooting
