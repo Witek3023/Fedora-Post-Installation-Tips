@@ -113,6 +113,7 @@ To add Flathub Stable, execute the following command:
 
 .. code-block:: shell
 
+    sudo dnf install flatpak
     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 To add Flathub Beta, execute the following command:
