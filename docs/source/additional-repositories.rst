@@ -24,7 +24,7 @@ For the current Fedora releases, the suggested method is to install appstream-da
 
 .. code-block:: shell
 
-    sudo dnf groupupdate core
+    sudo dnf group upgrade core
 
 Codecs Installation
 --------------------
