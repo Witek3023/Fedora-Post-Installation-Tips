@@ -102,7 +102,7 @@ Upgrade Multimedia group:
 
 .. code-block:: shell
 
-    sudo dnf group upgrade --with-optional Multimedia
+    sudo dnf group upgrade multimedia
 
 Flathub - the Largest Flatpak Software Repository
 --------------------------------------------------
