@@ -11,6 +11,7 @@ Before proceeding with the customization steps, it's important to update your sy
 - [Additional Repositories + Codecs](additional_repositories.md)
 - [Custom Fedora Setup Guide](personal.md)
 - [KDE Optimization](kde_speedup.md)
+- [Services](services.md)
 
 ## Credits
 
