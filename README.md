@@ -6,11 +6,13 @@ Before proceeding with the customization steps, it's important to update your sy
 
 ## Contents
 
-- [Systemd-boot Installation](systemd-boot.md)
-- [DNF Optimization](dnf-optimization.md)
-- [Additional Repositories + Codecs](additional-repositories.md)
+- [Systemd-boot Installation](systemd_boot.md)
+- [DNF Optimization](dnf_optimization.md)
+- [Additional Repositories + Codecs](additional_repositories.md)
 - [Custom Fedora Setup Guide](personal.md)
+- [KDE Optimization](kde_speedup.md)
 
 ## Credits
-https://github.com/odziom91/fedora-tips-and-tricks<br>
-https://rpmfusion.org/Howto
+
+<https://github.com/odziom91/fedora-tips-and-tricks>  
+<https://rpmfusion.org/Howto>
