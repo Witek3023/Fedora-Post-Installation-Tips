@@ -34,6 +34,7 @@ color=always
 # Replaces the standard progress bar with a small animation.
 z_wagon=True
 ```
+
 After saving these changes, run the following command to clear the cache and apply the new mirror/metadata settings:
 
 ```Shell

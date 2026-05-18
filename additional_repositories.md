@@ -45,30 +45,35 @@ sudo dnf group install sound-and-video
 Enable hardware-level decoding to save CPU usage and battery life.
 
 * **Intel (Modern):**
+
 ```shell
 sudo dnf install intel-media-driver
 ```
-
 
 * **Intel (Older):**
 
 ```shell
 sudo dnf install libva-intel-driver
 ```
+
 * **AMD (Mesa):**
+
 ```shell
 sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
 sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 ```
+
 * **i686 Compatibility (for Steam/32-bit apps):**
-    
+
 ```shell
 sudo dnf swap mesa-va-drivers.i686 mesa-va-drivers-freeworld.i686
 sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686
 ```
 
 ## OpenH264 Installation
+
 To enable H.264 support in browsers like Firefox:
+
 ```shell
 sudo dnf install gstreamer1-plugin-openh264 mozilla-openh264
 ```

@@ -15,7 +15,7 @@
 1. **Stop server:**
 
    ```bash
-      akonadictl stop
+   akonadictl stop
    ```
 
 2. **Edit config:** In `~/.config/akonadi/akonadiserverrc`, set `StartServer=false`.

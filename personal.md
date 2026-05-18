@@ -9,13 +9,13 @@ This guide provides steps to customize your Fedora system for enhanced functiona
 1. **Install Zsh:**
 
    ```shell
-      sudo dnf install zsh
+   sudo dnf install zsh
    ```
 
 2. **Change default shell to Zsh:**
 
    ```shell
-      chsh -s $(which zsh)
+   chsh -s $(which zsh)
    ```
 
 3. My shell settings are available in: [Dotfiles](https://github.com/Witek3023/Dotfiles).
@@ -25,13 +25,13 @@ This guide provides steps to customize your Fedora system for enhanced functiona
 1. **Check SELinux status:**
 
    ```shell
-      sestatus
+   sestatus
    ```
 
 2. **Open SELinux configuration file:**
 
    ```shell
-      sudo nano /etc/sysconfig/selinux
+   sudo nano /etc/sysconfig/selinux
    ```
 
 3. To **Disable SELinux** by changing the value of `SELINUX` to `disabled`.
@@ -46,27 +46,27 @@ Features and instructions to install are available in:
 1. **Install essential(for me) tools:**
 
    ```shell
-      dnf copr enable lihaohong/yazi
+   dnf copr enable lihaohong/yazi
    ```
 
    ```shell
-      sudo dnf install net-tools python3-pip htop fastfetch git unzip btop zathura feh vim figlet lolcat tar xz p7zip zip gzip cpio unace inxi stow sl cmus mpv foot zsh fzf wl-clipboard xdg-utils curl fontconfig flatpak bzip2 unrar xz-lzma-compat fuzzel sway gnome-keyring libsecret yazi clipman
+   sudo dnf install net-tools python3-pip htop fastfetch git unzip btop zathura feh vim figlet lolcat tar xz p7zip zip gzip cpio unace inxi stow sl cmus mpv foot zsh fzf wl-clipboard xdg-utils curl fontconfig flatpak bzip2 unrar xz-lzma-compat fuzzel sway gnome-keyring libsecret yazi clipman
    ``
 
    ```shell
-      flatpak install flathub com.discordapp.Discord com.spotify.Client com.yubico.yubioath
+   flatpak install flathub com.discordapp.Discord com.spotify.Client com.yubico.yubioath
    ```
 
 2. **Set hardware clock to local time:**
 
    ```shell
-      sudo timedatectl set-local-rtc '0'
+   sudo timedatectl set-local-rtc '0'
    ```
 
 3. **Disable terminal bell:**
 
    ```shell
-      echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/blacklist-pcspkr.conf > /dev/null
+   echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/blacklist-pcspkr.conf > /dev/null
    ```
 
 4. **Installing VS Codium**
@@ -74,23 +74,23 @@ Features and instructions to install are available in:
    Add the repository:
 
    ```shell
-      Fedora/RHEL/CentOS/Rocky Linux:
-      sudo tee -a /etc/yum.repos.d/vscodium.repo << 'EOF'
-      [gitlab.com_paulcarroty_vscodium_repo]
-      name=gitlab.com_paulcarroty_vscodium_repo
-      baseurl=https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/rpms/
-      enabled=1
-      gpgcheck=1
-      repo_gpgcheck=1
-      gpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
-      metadata_expire=1h
-      EOF
+   Fedora/RHEL/CentOS/Rocky Linux:
+   sudo tee -a /etc/yum.repos.d/vscodium.repo << 'EOF'
+   [gitlab.com_paulcarroty_vscodium_repo]
+   name=gitlab.com_paulcarroty_vscodium_repo
+   baseurl=https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/rpms/
+   enabled=1
+   gpgcheck=1
+   repo_gpgcheck=1
+   gpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
+   metadata_expire=1h
+   EOF
    ```
 
    Install the software: (if you want vscodium-insiders, then replace codium by codium-insiders)
 
    ```shell
-      sudo dnf install codium
+   sudo dnf install codium
    ```
 
 5. **Brave Origin**
@@ -98,23 +98,23 @@ Features and instructions to install are available in:
    Add Repository
 
    ```shell
-      sudo dnf install dnf-plugins-core
-      sudo dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-nightly.s3.brave.com/brave-browser-nightly.repo
+   sudo dnf install dnf-plugins-core
+   sudo dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-nightly.s3.brave.com/brave-browser-nightly.repo
    ```
 
    Install
 
    ```shell
-      sudo dnf install brave-origin-nightly
+   sudo dnf install brave-origin-nightly
    ```
 
 ## Firmware Updates
 
 ```shell
-   sudo fwupdmgr get-devices 
-   sudo fwupdmgr refresh --force 
-   sudo fwupdmgr get-updates 
-   sudo fwupdmgr update
+sudo fwupdmgr get-devices 
+sudo fwupdmgr refresh --force 
+sudo fwupdmgr get-updates 
+sudo fwupdmgr update
 ```
 
 ## Power Management Configuration
@@ -124,7 +124,7 @@ Features and instructions to install are available in:
 Replace power-profiles-daemon with tuned-ppd:
 
 ```shell
-   sudo dnf swap power-profiles-daemon tuned-ppd
+sudo dnf swap power-profiles-daemon tuned-ppd
 ```
 
 ### Install TLP (Alternative)
@@ -132,38 +132,38 @@ Replace power-profiles-daemon with tuned-ppd:
 1. **Install TLP:**
 
    ```shell
-      sudo dnf install tlp tlp-rdw
+   sudo dnf install tlp tlp-rdw
    ```
 
 2. **Remove Power Profiles Daemon:**
 
    ```shell
-      sudo dnf remove power-profiles-daemon
+   sudo dnf remove power-profiles-daemon
    ```
 
 3. **Enable TLP:**
 
    ```shell
-      sudo systemctl enable tlp.service
+   sudo systemctl enable tlp.service
    ```
 
 4. **Mask rfkill services:**
 
    ```shell
-      sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket
+   sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket
    ```
 
 5. **Add ThinkPad Extras:**
 
    ```shell
-      sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm
+   sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm
    ```
 
 6. **Install kernel-devel and tp_smapi:**
 
    ```shell
-      sudo dnf install kernel-devel akmod-tp_smapi
-      sudo dnf --enablerepo=tlp-updates-testing install kernel-devel akmod-tp_smapi
+   sudo dnf install kernel-devel akmod-tp_smapi
+   sudo dnf --enablerepo=tlp-updates-testing install kernel-devel akmod-tp_smapi
    ```
 
 ---
@@ -179,14 +179,14 @@ Install the utility and configure the sensors and fan thresholds.
 **Install Thinkfan:**
 
 ```bash
-   sudo dnf install thinkfan
+sudo dnf install thinkfan
 ```
 
 **Edit the Configuration File:**
 *(Newer versions often use `/etc/thinkfan.yaml`)*
 
 ```bash
-   sudo nano /etc/thinkfan.conf
+sudo nano /etc/thinkfan.conf
 ```
 
 **Paste the following configuration:**
@@ -218,13 +218,13 @@ levels:
 Restart the service to apply the new curve:
 
 ```bash
-   sudo systemctl restart thinkfan
+sudo systemctl restart thinkfan
 ```
 
 Check the service status:
 
 ```bash
-   sudo systemctl status thinkfan
+sudo systemctl status thinkfan
 ```
 
 ### 2. Disable Intel Turbo Boost
@@ -234,18 +234,18 @@ To prevent the CPU from hitting high temperatures disable Turbo Boost using `tmp
 **Create the Configuration File:**
 
 ```bash
-   sudo nano /etc/tmpfiles.d/disable-turbo.conf
+sudo nano /etc/tmpfiles.d/disable-turbo.conf
 ```
 
 **Add the following line:**
 
 ```text
-   w /sys/devices/system/cpu/intel_pstate/no_turbo - - - - 1
+w /sys/devices/system/cpu/intel_pstate/no_turbo - - - - 1
 ```
 
 **Apply changes immediately:**
 
 ```bash
-   sudo sysctl --system
-   echo 2 | sudo tee /sys/kernel/mm/ksm/run
+sudo sysctl --system
+echo 2 | sudo tee /sys/kernel/mm/ksm/run
 ```
